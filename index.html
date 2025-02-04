@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Color Game</h1>
+        <p>Test your color perception by clicking the correct color.</p>
+    </div>
+    <div class="game-container">
+        <div class="score-game">
+            <p class="score">🏆Score: <span id="score">0</span></p>
+            <button id="new-game" class="new-game-btn">
+                <img src="image/rotate-right.svg" alt="Load Game">
+                New Game
+            </button>
+        </div>
+
+        <div id="target" class="target"></div>
+
+        <div>
+            <p id="message" class="message"></p>
+            <p class="guess">Make Your Guess!</p>
+        </div>
+
+        <div class="color-options" id="color-options"></div>
+
+        <p class="tap">ℹ️ Tap on a color to make a guess</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    display: grid;
+    color: #4d4d4d;
+    background-image: linear-gradient(to bottom, whitesmoke , rgb(145, 144, 144), white);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    margin: 24px 10px;
+}
+.title > p {
+    margin: 8px 0;
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.game-container {
+    width: 320px;
+    margin: auto;
+    padding: 28px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.score-game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.score {
+    font-size: 1em;
+}
+span {
+    color: darkblue;
+    font-weight: 600;
+}
+.new-game-btn {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Kanit", "sans-serif";
+    transition: transform 0.2s ease-in;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.4);
+}
+.new-game-btn:hover {
+    background-color: dodgerblue;
+}
+.new-game-btn > img {
+    width: 12px;
+}
+
+.target {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+.color-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+.color-btn {
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.color-btn:hover {
+    transform: scale(1.1);
+}
+.guess {
+   margin-top: 20px;
+   font-size: 1em;
+   font-size: 500; 
+}
+.message {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+    transition: opacity 0.5s;
+}
+.tap {
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+    .game-container {
+        width: 400px;
+    }
+}
+@media (min-width: 900px) {
+    .game-container {
+        width: 500px;
+    }
+    .new-game-btn {
+        padding: 8px 32px;
+    }
+    .score {
+        font-size: 1.2em;
+    }
+}
